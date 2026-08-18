@@ -1,70 +1,50 @@
 # Processo XP e Scrum — AgileTech Solutions
 
-## 1. Quadro Kanban no GitHub Projects
+## 1. Introdução
 
-Para organizar o desenvolvimento do sistema da AgileTech Solutions, foi criado um quadro no GitHub Projects combinando elementos do Scrum e práticas do XP.
+A AgileTech Solutions possui uma equipe pequena e precisa desenvolver um sistema web de gestão de projetos ágeis. Como os requisitos podem mudar durante o desenvolvimento, a equipe utilizará Scrum para organizar o trabalho e práticas de Extreme Programming (XP) para melhorar a qualidade do desenvolvimento.
 
-O quadro possui as seguintes etapas:
-
-- Backlog
-- A Fazer
-- Em Desenvolvimento
-- Em Revisão
-- Concluído
-
-O quadro pode ser acessado pelo link:
-
-[AgileTech Solutions — XP + Scrum](https://github.com/users/Zurg22/projects/1/views/1)
-
-Foram criadas cinco user stories para representar as principais atividades do sistema:
-
-1. Cadastrar usuário
-2. Realizar login
-3. Criar projeto
-4. Criar tarefas no projeto
-5. Visualizar tarefas do projeto
-
-Inicialmente, as histórias ficam no Backlog e vão avançando pelas colunas conforme o desenvolvimento acontece.
+O quadro Kanban será utilizado como ferramenta visual para acompanhar o andamento das tarefas durante as Sprints.
 
 ---
 
 ## 2. Práticas de XP adotadas
 
-A equipe da AgileTech Solutions vai utilizar as seguintes práticas do Extreme Programming (XP):
+A equipe adotará as seguintes práticas de Extreme Programming:
 
 ### 2.1 Programação em Pares
 
-Dois desenvolvedores trabalham juntos na mesma tarefa. Enquanto uma pessoa escreve o código, a outra acompanha, revisa e sugere melhorias.
+Duas pessoas trabalham juntas na mesma tarefa. Uma pessoa escreve o código enquanto a outra acompanha, revisa e sugere melhorias.
 
-Essa prática ajuda a encontrar erros mais cedo e também facilita o compartilhamento de conhecimento entre os integrantes da equipe.
+Essa prática ajuda a encontrar erros mais cedo e facilita o compartilhamento de conhecimento entre os desenvolvedores.
 
 ### 2.2 Desenvolvimento Orientado a Testes (TDD)
 
-Antes ou junto da implementação, a equipe cria testes para verificar o comportamento esperado da funcionalidade.
+Antes de implementar uma funcionalidade, a equipe cria testes que representam o comportamento esperado.
 
-Isso ajuda a reduzir erros e dá mais segurança para realizar alterações no código.
+Depois, o código é desenvolvido para fazer os testes passarem. Isso ajuda a reduzir erros e aumenta a confiança nas alterações realizadas.
 
 ### 2.3 Integração Contínua
 
 Os desenvolvedores devem integrar suas alterações ao código principal com frequência.
 
-Dessa maneira, os problemas de integração podem ser identificados rapidamente, evitando que várias alterações sejam acumuladas por muito tempo.
+Isso evita que grandes quantidades de código sejam desenvolvidas separadamente por muito tempo e facilita a identificação de conflitos e problemas.
 
 ### 2.4 Refatoração
 
-A equipe deve melhorar a estrutura do código sempre que necessário, sem alterar o comportamento esperado do sistema.
+A equipe deve melhorar continuamente a estrutura do código sem alterar o comportamento esperado do sistema.
 
-A ideia é evitar que o código fique desnecessariamente complicado e facilitar sua manutenção.
+A refatoração ajuda a manter o código simples, organizado e fácil de manter.
 
 ### 2.5 Design Simples
 
-A equipe deve implementar somente o que realmente é necessário para atender aos requisitos atuais.
+A equipe deve implementar somente o que é realmente necessário para atender aos requisitos atuais.
 
-Não faz sentido criar funcionalidades apenas imaginando que poderão ser utilizadas no futuro. Essa prática está relacionada ao princípio YAGNI.
+Essa prática evita complexidade desnecessária e está relacionada ao princípio YAGNI, que significa "You Aren't Gonna Need It".
 
 ### 2.6 Propriedade Coletiva do Código
 
-O código não pertence exclusivamente a um desenvolvedor. Todos os integrantes da equipe podem analisar, alterar e melhorar qualquer parte do sistema.
+O código pertence à equipe como um todo. Qualquer desenvolvedor pode realizar melhorias ou correções em qualquer parte do sistema.
 
 Isso reduz a dependência de uma única pessoa e facilita a colaboração.
 
@@ -72,148 +52,276 @@ Isso reduz a dependência de uma única pessoa e facilita a colaboração.
 
 ## 3. Integração entre XP e Scrum
 
-O Scrum será utilizado principalmente para organizar o trabalho e acompanhar a evolução do produto, enquanto as práticas de XP serão utilizadas durante o desenvolvimento.
+Scrum será utilizado para organizar e gerenciar o processo de desenvolvimento, enquanto XP será utilizado principalmente para orientar as práticas técnicas da equipe.
 
-O Scrum define uma organização baseada em Sprints, Product Backlog, planejamento, reuniões diárias, Review e Retrospectiva.
+O Scrum define eventos, papéis e organização do trabalho. A equipe utilizará Sprints de duas semanas para planejar e entregar incrementos do produto.
 
-O XP complementa esse processo com práticas mais voltadas para a qualidade e para a forma como o código é desenvolvido.
+Durante essas Sprints, as práticas de XP serão utilizadas no desenvolvimento das funcionalidades.
 
-Por exemplo, durante uma Sprint do Scrum, os desenvolvedores podem utilizar programação em pares, TDD, integração contínua, refatoração e design simples.
+Por exemplo:
 
-Dessa forma, Scrum ajuda a equipe a decidir e organizar o que será desenvolvido, enquanto XP ajuda a definir uma forma mais eficiente e segura de desenvolver essas funcionalidades.
+- o Scrum organiza a Sprint e define as prioridades;
+- o Product Owner prioriza o Product Backlog;
+- o Sprint Planning define o trabalho da Sprint;
+- as práticas de XP orientam a implementação;
+- o TDD será utilizado durante o desenvolvimento;
+- a programação em pares será utilizada em tarefas que possam se beneficiar de revisão conjunta;
+- a integração contínua será realizada durante toda a Sprint;
+- a refatoração será realizada sempre que necessário;
+- o Design Simples será utilizado para evitar funcionalidades desnecessárias;
+- ao final da Sprint, o incremento será apresentado na Sprint Review.
+
+Dessa forma, Scrum e XP se complementam: Scrum organiza o trabalho e XP ajuda a garantir qualidade técnica.
 
 ---
 
-## 4. Fluxo semanal da equipe
+## 4. Fluxo de trabalho da equipe
 
-A equipe terá um fluxo de trabalho baseado em Sprints e acompanhamento diário.
+A equipe utilizará o seguinte fluxo durante as Sprints:
 
 ### Segunda-feira — Planning
 
-A equipe realiza o planejamento das atividades.
+A equipe realiza o Sprint Planning para definir o objetivo da Sprint e selecionar os itens prioritários do Product Backlog.
 
-Participam os desenvolvedores e o Product Owner.
+As tarefas selecionadas são colocadas no quadro de acompanhamento.
 
-Nesse momento, as histórias mais importantes do Product Backlog são analisadas e as tarefas que serão trabalhadas são selecionadas para a Sprint.
-
-### Terça a quinta-feira — Desenvolvimento
+### Terça-feira a sexta-feira — Desenvolvimento
 
 Os desenvolvedores trabalham nas tarefas selecionadas.
 
-Durante esse período podem ser utilizadas práticas como:
+Durante esse período são utilizadas as práticas de XP, como TDD, programação em pares, integração contínua, refatoração e Design Simples.
 
-- Programação em Pares;
-- TDD;
-- Integração Contínua;
-- Refatoração;
-- Design Simples.
+### Todos os dias — Daily Scrum
 
-Também ocorre a Daily Scrum todos os dias.
+A equipe realiza uma reunião rápida de aproximadamente 15 minutos.
 
-### Daily Scrum
+Cada integrante informa:
 
-A Daily é uma reunião rápida, com aproximadamente 15 minutos.
-
-Cada integrante pode informar:
-
-- o que fez desde a última reunião;
+- o que realizou;
 - o que pretende fazer;
 - se existe algum impedimento.
 
-O objetivo é manter a equipe alinhada e identificar problemas rapidamente.
+### Segunda semana — Desenvolvimento e preparação da entrega
 
-### Sexta-feira — Review
+A equipe continua o desenvolvimento, realizando testes, integração e correções.
 
-A equipe apresenta o que foi desenvolvido durante o período para o Product Owner.
+As tarefas concluídas passam por revisão antes de serem consideradas prontas.
 
-O objetivo é verificar se as funcionalidades atendem às necessidades do produto e coletar feedback.
+### Final da Sprint — Review
 
-### Sexta-feira — Retrospectiva
+A equipe apresenta o incremento desenvolvido ao Product Owner e coleta feedback.
 
-Depois da Review, a equipe realiza uma retrospectiva.
+### Final da Sprint — Retrospectiva
 
-Nesse momento são discutidos pontos que funcionaram bem, problemas encontrados e possíveis melhorias para a próxima Sprint.
+Após a Review, a equipe realiza uma retrospectiva para analisar o que funcionou bem, o que poderia melhorar e quais ações serão tomadas na próxima Sprint.
 
 ---
 
-# 5. Cronograma de uma Sprint de 2 semanas
+## 5. Quadro Kanban no GitHub Projects
+
+O quadro da AgileTech Solutions foi criado no GitHub Projects para acompanhar visualmente o trabalho da equipe.
+
+Link para o quadro:
+
+https://github.com/users/Zurg22/projects/1/views/1
+
+O quadro possui as seguintes etapas:
+
+- Todo;
+- In Progress;
+- Done.
+
+As tarefas são representadas por Issues do GitHub vinculadas ao projeto.
+
+### User Stories adicionadas
+
+O quadro possui pelo menos cinco itens:
+
+1. **Cadastrar usuário**
+   - Como usuário, quero realizar meu cadastro no sistema para poder acessar a plataforma.
+
+2. **Realizar login**
+   - Como usuário, quero fazer login com meu e-mail e senha para acessar minha conta.
+
+3. **Criar projeto**
+   - Como usuário, quero criar um projeto para organizar minhas atividades e acompanhar seu desenvolvimento.
+
+4. **Criar tarefas no projeto**
+   - Como usuário, quero criar tarefas dentro de um projeto para organizar as atividades que precisam ser realizadas.
+
+5. **Visualizar tarefas do projeto**
+   - Como usuário, quero visualizar as tarefas do projeto para acompanhar suas atividades.
+
+Esses itens representam funcionalidades que podem ser desenvolvidas durante as Sprints.
+
+---
+
+# 6. Cronograma de uma Sprint de duas semanas
 
 A Sprint terá duração de duas semanas.
 
-| Dia | Atividade | Duração aproximada | Participantes |
+| Dia | Atividade | Duração | Participantes |
 |---|---|---:|---|
-| Dia 1 | Sprint Planning | 2 horas | Product Owner e desenvolvedores |
-| Dias 2 a 4 | Desenvolvimento + XP | Durante o dia | Desenvolvedores |
-| Dias 2 a 5 | Daily Scrum | 15 min por dia | Desenvolvedores e Product Owner |
-| Dia 5 | Desenvolvimento e integração | Durante o dia | Desenvolvedores |
-| Dia 6 | Desenvolvimento + XP | Durante o dia | Desenvolvedores |
-| Dia 7 | Desenvolvimento + XP | Durante o dia | Desenvolvedores |
-| Dia 8 | Desenvolvimento + testes | Durante o dia | Desenvolvedores |
-| Dia 9 | Finalização e preparação da entrega | Durante o dia | Desenvolvedores |
-| Dia 10 | Sprint Review | 1 hora | Product Owner e desenvolvedores |
-| Dia 10 | Retrospectiva | 45 min | Desenvolvedores e Product Owner |
-
-Durante todos os dias de desenvolvimento, a equipe pode aplicar as práticas de XP conforme a necessidade das tarefas.
+| Dia 1 | Sprint Planning | 2 horas | Scrum Master, Product Owner e desenvolvedores |
+| Dias 2 a 4 | Desenvolvimento + Daily | Daily de 15 min | Desenvolvedores e Scrum Master |
+| Dia 5 | Desenvolvimento + Daily | Daily de 15 min | Desenvolvedores e Scrum Master |
+| Dias 6 a 9 | Desenvolvimento + Daily | Daily de 15 min | Desenvolvedores e Scrum Master |
+| Dia 10 | Desenvolvimento, Review e Retrospectiva | Review 1h + Retrospectiva 1h | Toda a equipe e Product Owner na Review |
 
 ---
 
-## 6. Aplicação das práticas XP durante a Sprint
+## 7. Aplicação das práticas de XP durante a Sprint
 
-As práticas de XP serão utilizadas ao longo de toda a Sprint.
+As práticas de XP serão distribuídas durante todo o período da Sprint.
 
-A programação em pares será utilizada principalmente em tarefas mais complexas ou quando for necessário compartilhar conhecimento entre os desenvolvedores.
+### Dias 1 e 2
 
-O TDD será aplicado nas funcionalidades que exigirem maior controle sobre seu comportamento.
+A equipe começa as funcionalidades selecionadas no Planning.
 
-A integração contínua será utilizada sempre que novas alterações forem realizadas no código.
+O Design Simples será utilizado para evitar funcionalidades que não fazem parte dos requisitos atuais.
 
-A refatoração será realizada quando a equipe identificar código duplicado, confuso ou desnecessariamente complexo.
+### Dias 2 a 9
 
-O Design Simples será utilizado desde o início para evitar a criação de funcionalidades que não fazem parte dos requisitos atuais.
+Durante o desenvolvimento serão utilizadas:
 
-A propriedade coletiva do código permitirá que qualquer desenvolvedor possa corrigir ou melhorar uma parte do sistema quando necessário.
+- TDD;
+- Programação em Pares;
+- Integração Contínua;
+- Refatoração;
+- Design Simples;
+- Propriedade Coletiva do Código.
+
+Os desenvolvedores poderão alternar entre programação individual e programação em pares de acordo com a complexidade das tarefas.
+
+### Dias 8 e 9
+
+A equipe realiza uma revisão das funcionalidades concluídas, corrige problemas e garante que o código esteja integrado.
+
+Também serão realizados testes para verificar se as funcionalidades atendem aos requisitos.
+
+### Dia 10
+
+O incremento desenvolvido será apresentado ao Product Owner durante a Sprint Review.
+
+Após a Review, a equipe realiza a Retrospectiva e identifica melhorias para a próxima Sprint.
 
 ---
 
-## 7. Entregas esperadas ao final da Sprint
+## 8. Cerimônias do Scrum
 
-Ao final da Sprint, espera-se que a equipe tenha desenvolvido um incremento funcional do sistema.
+### Sprint Planning
+
+Ocorre no primeiro dia da Sprint.
+
+Objetivo: definir o objetivo da Sprint e selecionar os itens que serão desenvolvidos.
+
+Participantes:
+
+- Product Owner;
+- Scrum Master;
+- desenvolvedores.
+
+Duração planejada: aproximadamente 2 horas.
+
+### Daily Scrum
+
+Ocorre todos os dias úteis da Sprint.
+
+Objetivo: acompanhar o progresso e identificar impedimentos.
+
+Duração: aproximadamente 15 minutos.
+
+Participantes:
+
+- desenvolvedores;
+- Scrum Master.
+
+O Product Owner pode participar quando necessário.
+
+### Sprint Review
+
+Ocorre no último dia da Sprint.
+
+Objetivo: apresentar o incremento desenvolvido e receber feedback.
+
+Participantes:
+
+- Product Owner;
+- desenvolvedores;
+- Scrum Master;
+- interessados convidados.
+
+Duração planejada: aproximadamente 1 hora.
+
+### Sprint Retrospective
+
+Ocorre após a Sprint Review.
+
+Objetivo: analisar o processo de trabalho e identificar melhorias.
+
+Participantes:
+
+- Product Owner;
+- desenvolvedores;
+- Scrum Master.
+
+Duração planejada: aproximadamente 1 hora.
+
+---
+
+# 9. Entregas esperadas ao final da Sprint
+
+Ao final da Sprint, espera-se que a equipe entregue um incremento funcional do sistema.
 
 Entre as possíveis entregas estão:
 
-- cadastro de usuários;
-- login dos usuários;
+- cadastro de usuários funcionando;
+- login funcionando;
 - criação de projetos;
 - criação de tarefas;
 - visualização das tarefas;
-- código integrado e revisado;
-- funcionalidades validadas pelo Product Owner.
+- código integrado;
+- funcionalidades testadas;
+- código revisado e refatorado quando necessário.
 
-A prioridade é entregar software funcionando e que possa ser avaliado, em vez de produzir apenas documentação sobre funcionalidades que ainda não foram implementadas.
+A entrega deve estar em condições de ser apresentada ao Product Owner e avaliada.
 
 ---
 
-# 8. Scrum x Kanban
-
-Scrum e Kanban são formas diferentes de organizar o trabalho, mas podem ser utilizados juntos.
+# 10. Scrum x Kanban
 
 | Característica | Scrum | Kanban |
 |---|---|---|
-| Organização | Trabalha com Sprints | Trabalha com fluxo contínuo |
-| Planejamento | Planejamento no início da Sprint | Pode ser feito continuamente |
-| Entregas | Normalmente ao final de cada Sprint | Podem acontecer continuamente |
-| Reuniões | Possui cerimônias definidas | Não exige cerimônias específicas |
-| Papéis | Possui papéis como Product Owner e Scrum Master | Não exige papéis específicos |
-| Quadro visual | Pode utilizar quadro | O quadro é um elemento central |
-| Quando usar | Quando a equipe precisa trabalhar em ciclos e metas definidas | Quando é importante controlar o fluxo contínuo de tarefas |
-| Principal vantagem | Organização por ciclos e objetivos | Visualização e controle do fluxo de trabalho |
+| Organização | Trabalho dividido em Sprints | Fluxo contínuo |
+| Planejamento | Realizado no início da Sprint | Pode ocorrer continuamente |
+| Entregas | Normalmente ao final da Sprint | Podem ocorrer continuamente |
+| Papéis | Possui papéis definidos | Não exige papéis específicos |
+| Limite de trabalho | O trabalho é definido para a Sprint | Utiliza limites de trabalho em andamento |
+| Quando usar | Quando a equipe precisa de ciclos e objetivos definidos | Quando é importante acompanhar um fluxo contínuo |
+| Principal vantagem | Organização por ciclos e objetivos | Visualização e controle do fluxo |
+| Mudanças | Podem ser planejadas para próximas Sprints | Podem ser incorporadas ao fluxo conforme disponibilidade |
+| Uso no projeto | Organizar a Sprint | Visualizar o andamento das tarefas |
 
-## 8.1 Como Scrum e Kanban podem ser combinados
+---
 
-Na AgileTech Solutions, o Scrum será utilizado para organizar o trabalho em Sprints de duas semanas.
+## 11. Como Scrum e Kanban podem ser combinados
+
+Scrum e Kanban podem ser utilizados juntos.
+
+Na AgileTech Solutions, o Scrum será responsável por organizar o trabalho em Sprints de duas semanas, definir objetivos e realizar as cerimônias.
 
 O Kanban será utilizado como forma visual de acompanhar o andamento das tarefas.
 
-Assim, o Product Backlog representa o conjunto de necessidades do produto, enquanto o quadro mostra visualmente quais tarefas estão no Backlog, quais serão feitas, quais estão em desenvolvimento, quais estão em revisão e quais já foram concluídas.
+Assim, o Product Backlog representa o conjunto de necessidades do produto, enquanto o quadro mostra visualmente quais tarefas estão no Todo, quais estão em desenvolvimento e quais já foram concluídas.
 
 Essa combinação permite que a equipe tenha a organização das Sprints do Scrum e, ao mesmo tempo, tenha uma visão clara do fluxo das atividades através do quadro Kanban.
+
+---
+
+## 12. Conclusão
+
+A combinação de Scrum, Kanban e práticas de XP oferece uma forma adequada de organizar o desenvolvimento da AgileTech Solutions.
+
+O Scrum fornece uma estrutura para planejamento, acompanhamento e revisão do trabalho. O Kanban facilita a visualização do fluxo das tarefas. As práticas de XP contribuem para melhorar a qualidade técnica, reduzir erros e manter o código simples.
+
+Com essa abordagem, a equipe consegue trabalhar em ciclos curtos, receber feedback frequente e adaptar o desenvolvimento conforme as necessidades do produto.
