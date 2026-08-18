@@ -2,7 +2,7 @@
 
 ## 1. Aplicação dos valores do Manifesto Ágil
 
-A AgileTech Solutions tem uma equipe pequena, formada por cinco desenvolvedores e um Product Owner. Além disso, os requisitos ainda não estão totalmente definidos, podem mudar com frequência e existe uma pressão para entregar o sistema rapidamente. Por esses motivos, os valores do Manifesto Ágil fazem bastantedi sentido para a situação da empresa.
+A AgileTech Solutions tem uma equipe pequena, formada por cinco desenvolvedores e um Product Owner. Além disso, os requisitos ainda não estão totalmente definidos, podem mudar com frequência e existe uma pressão para entregar o sistema rapidamente. Por esses motivos, os valores do Manifesto Ágil fazem bastante sentido para a situação da empresa.
 
 ### 1.1 Indivíduos e interações mais que processos e ferramentas
 
